@@ -29,6 +29,7 @@
     "@radix-ui/react-tooltip": "^1.2.4",
     "@tabler/icons-react": "^3.31.0",
     "@tanstack/react-table": "^8.21.3",
+    "antd": "^5.25.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.9.4",
