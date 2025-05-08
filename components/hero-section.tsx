@@ -18,7 +18,7 @@ export default function HeroSection() {
     return (
         <>
             <header>
-                <nav
+                {/* <nav
                     data-state={menuState && 'active'}
                     className="fixed z-20 w-full border-b border-dashed bg-white backdrop-blur md:relative dark:bg-zinc-950/50 lg:dark:bg-transparent">
                     <div className="m-auto max-w-5xl px-6">
@@ -75,7 +75,7 @@ export default function HeroSection() {
                             </div>
                         </div>
                     </div>
-                </nav>
+                </nav> */}
             </header>
 
             <main>
