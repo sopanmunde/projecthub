@@ -1,18 +1,14 @@
 'use client'
 import { Logo } from '@/components/logo'
 import Link from 'next/link'
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
-import Image from 'next/image'
 import { ModeToggle } from './mod-togle'
 import { UserButton } from '@clerk/nextjs'
 
 const menuItems = [
-    { name: 'Dashboard', href: '/dashboard' },
     { name: 'Solution', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'About', href: '#' },
+    { name: 'Login', href: '/sign-in' },
+    { name: 'Signup', href: '/sign-up' },
 ]
 
 export default function Nav () {
@@ -53,7 +49,7 @@ export default function Nav () {
 
                                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
                                    <UserButton/>
-                                    <ModeToggle/>
+                                   <ModeToggle/>
                                 </div>
                             </div>
                         </div>
