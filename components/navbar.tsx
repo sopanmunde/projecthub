@@ -2,7 +2,7 @@
 import { Logo } from '@/components/logo'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
-import { ModeToggle } from './mod-togle'
+import { ModeToggle } from '@/components/mode-toggle'
 import { UserButton } from '@clerk/nextjs'
 
 const menuItems = [

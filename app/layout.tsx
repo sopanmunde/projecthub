@@ -3,6 +3,12 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { ReactNode } from "react";
+
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,22 +36,30 @@ export const metadata: Metadata = {
 },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en" className="dark">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > <ClerkProvider>
-         <ThemeProvider>
 
-        {children}
-        </ThemeProvider>
-        </ClerkProvider>
-      </body>
-    </html>
-  );
+
+
+export default function RootLayout({ children }: RootLayoutProps) {
+  return (
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <ClerkProvider>
+
+            {children}
+            </ClerkProvider>
+          </ThemeProvider>
+        </body>
+      </html>
+    </>
+  )
 }
