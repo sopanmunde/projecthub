@@ -65,7 +65,7 @@ export default function HeroSection() {
                                     />
                                     <Image
                                         className="rounded-(--radius) z-1 relative hidden border dark:block"
-                                        src="/demo.png"
+                                        src="/demo-dark.png"
                                         alt="Tailark hero section"
                                         width={2880}
                                         height={2074}

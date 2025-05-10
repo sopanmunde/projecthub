@@ -37,7 +37,7 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
+    name: "Spacious",
     email: "m@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
@@ -119,7 +119,7 @@ const data = {
   navSecondary: [
     {
       title: "Settings",
-      url: "#",
+      url: "/dashboard/settings",
       icon: IconSettings,
     },
     {
