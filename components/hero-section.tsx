@@ -19,7 +19,7 @@ export default function HeroSection() {
                             <Button
                                 asChild
                                 size="lg">
-                                <Link href="/sign-in">
+                                <Link href="/dashboard">
                                     <span className="btn-label">Start Building</span>
                                 </Link>
                             </Button>
