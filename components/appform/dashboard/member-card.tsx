@@ -46,7 +46,7 @@ export function MemberCard({ member, onRemove, onUpdate }: MemberCardProps) {
               email: member.email,
               contact: member.contact,
             }}
-            onFormSubmit={handleEditSubmit} // Changed from onSubmit to onFormSubmit
+            onSubmit={handleEditSubmit} // Changed from onSubmit to onFormSubmit
             onCancel={handleCancelEdit}
             submitButtonText="Save Changes"
           />

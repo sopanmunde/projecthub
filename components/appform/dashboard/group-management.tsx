@@ -235,7 +235,7 @@ export function GroupManagement({ onMembersChange }: GroupManagementProps) {
             </CardHeader>
             <CardContent className="p-0">
                 <AddMemberForm
-                    onFormSubmit={handleAddMember}
+                    onSubmit={handleAddMember}
                     onCancel={() => setShowAddMemberForm(false)}
                     submitButtonText="Add Member"
                 />
