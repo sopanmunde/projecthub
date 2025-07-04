@@ -1,14 +1,23 @@
 'use client'
 import { Logo } from '@/components/logo'
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { ChevronDown, Menu, X } from 'lucide-react'
 import { ModeToggle } from '@/components/mode-toggle'
 import { UserButton } from '@clerk/nextjs'
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 const menuItems = [
     { name: 'Solution', href: '#' },
     { name: 'Login', href: '/sign-in' },
-    { name: 'Signup', href: '/sign-up' },
+    // { name: 'Signup', href: '/sign-up' },
 ]
 
 export default function Nav () {
@@ -44,9 +53,31 @@ export default function Nav () {
                                                 </Link>
                                             </li>
                                         ))}
-                                    </ul>
+                                   </ul>
                                 </div>
+                               <div>
+  <DropdownMenu>
+    <DropdownMenuTrigger>Register</DropdownMenuTrigger>
+    <DropdownMenuContent>
+      <DropdownMenuSeparator />
+      <Link href="/sign-up">
+        <DropdownMenuItem>Head</DropdownMenuItem>
+      </Link>
+      <Link href="/sign-up">
+        <DropdownMenuItem>Manager</DropdownMenuItem>
+      </Link>
+      <Link href="/sign-up">
+        <DropdownMenuItem>Mentor</DropdownMenuItem>
+      </Link>
+      <Link href="/sign-up">
+        <DropdownMenuItem>Students</DropdownMenuItem>
+      </Link>
+    </DropdownMenuContent>
+  </DropdownMenu>
+</div>
 
+
+                                
                                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
                                    <UserButton/>
                                    <ModeToggle/>

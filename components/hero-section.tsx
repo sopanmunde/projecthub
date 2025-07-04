@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
+import { DropdownMenu } from './ui/dropdown-menu'
+import { Dropdown } from 'react-day-picker'
 
 
 export default function HeroSection() {
@@ -19,9 +21,9 @@ export default function HeroSection() {
                             <Button
                                 asChild
                                 size="lg">
-                                <Link href="/dashboard">
-                                    <span className="btn-label">Start Building</span>
-                                </Link>
+                                 <Link href="/dashboard">
+                                     <span className="btn-label">Start Building</span>                                
+                                </Link>                                
                             </Button>
                         </div>
                     </div>

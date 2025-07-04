@@ -58,6 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             {children}
             </ClerkProvider>
           </ThemeProvider>
+          
         </body>
       </html>
     </>
