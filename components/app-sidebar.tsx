@@ -12,6 +12,8 @@ import {
   Settings2,
   Sheet,
   FolderOpen,
+  BarChart3,
+  Search,
 } from "lucide-react"
 import { useUser } from "@clerk/nextjs"
 
@@ -56,12 +58,50 @@ const data = {
           url: "/dashboard",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Enhanced",
+          url: "/enhanced-dashboard",
         },
         {
           title: "Settings",
           url: "/settings",
+        },
+      ],
+    },
+    {
+      title: "Analytics",
+      url: "/enhanced-dashboard",
+      icon: BarChart3,
+      items: [
+        {
+          title: "Enhanced Dashboard",
+          url: "/enhanced-dashboard",
+        },
+        {
+          title: "Project Analytics",
+          url: "#",
+        },
+        {
+          title: "Team Performance",
+          url: "#",
+        },
+      ],
+    },
+    {
+      title: "Search",
+      url: "/search",
+      icon: Search,
+      items: [
+        {
+          title: "All Projects",
+          url: "/search",
+        },
+        {
+          title: "My Projects",
+          url: "#",
+        },
+        {
+          title: "Team Projects",
+          url: "#",
         },
       ],
     },

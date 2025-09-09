@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Dashboard - ProjectHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-8">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Enhanced Dashboard</h1>
+                <p class="text-gray-600 dark:text-gray-300">Overview of your projects, activities, and progress</p>
+            </div>
+            <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors flex items-center gap-2">
+                <i data-lucide="plus" class="w-4 h-4"></i>
+                New Project
+            </button>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-8">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-medium text-gray-600 dark:text-gray-300">Total Projects</h3>
+                    <i data-lucide="bar-chart-3" class="w-4 h-4 text-gray-400"></i>
+                </div>
+                <div class="text-2xl font-bold text-gray-900 dark:text-white">4</div>
+                <p class="text-xs text-gray-500">75% completion rate</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-medium text-gray-600 dark:text-gray-300">In Progress</h3>
+                    <i data-lucide="trending-up" class="w-4 h-4 text-gray-400"></i>
+                </div>
+                <div class="text-2xl font-bold text-gray-900 dark:text-white">1</div>
+                <p class="text-xs text-gray-500">Active development</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-medium text-gray-600 dark:text-gray-300">Completed</h3>
+                    <i data-lucide="check-circle" class="w-4 h-4 text-gray-400"></i>
+                </div>
+                <div class="text-2xl font-bold text-gray-900 dark:text-white">1</div>
+                <p class="text-xs text-gray-500">Successfully finished</p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-medium text-gray-600 dark:text-gray-300">Overall Progress</h3>
+                    <i data-lucide="target" class="w-4 h-4 text-gray-400"></i>
+                </div>
+                <div class="text-2xl font-bold text-gray-900 dark:text-white">69%</div>
+                <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-2">
+                    <div class="bg-blue-600 h-2 rounded-full" style="width: 69%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3">
+            <!-- Recent Projects -->
+            <div class="lg:col-span-2">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+                    <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Recent Projects</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Your latest and most active projects</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <!-- Project 1 -->
+                        <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <h4 class="font-semibold text-gray-900 dark:text-white">E-Learning Platform</h4>
+                                    <span class="px-2 py-1 text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 rounded">High</span>
+                                    <span class="px-2 py-1 text-xs border border-yellow-500 text-yellow-600 rounded">In Progress</span>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">A comprehensive e-learning platform with course management...</p>
+                                <div class="flex items-center gap-4 text-xs text-gray-500">
+                                    <div class="flex items-center gap-1">
+                                        <i data-lucide="calendar" class="w-3 h-3"></i>
+                                        Dec 15
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i>
+                                        3 members
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-4 text-right">
+                                <div class="text-sm font-medium mb-1">65%</div>
+                                <div class="w-20 bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <h4 class="font-semibold text-gray-900 dark:text-white">Smart Home Energy Monitor</h4>
+                                    <span class="px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 rounded">Medium</span>
+                                    <span class="px-2 py-1 text-xs border border-blue-500 text-blue-600 rounded">Planning</span>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">IoT system to monitor and optimize home energy consumption...</p>
+                                <div class="flex items-center gap-4 text-xs text-gray-500">
+                                    <div class="flex items-center gap-1">
+                                        <i data-lucide="calendar" class="w-3 h-3"></i>
+                                        Jan 30
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i>
+                                        1 member
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-4 text-right">
+                                <div class="text-sm font-medium mb-1">25%</div>
+                                <div class="w-20 bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 25%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <h4 class="font-semibold text-gray-900 dark:text-white">Customer Behavior Analysis</h4>
+                                    <span class="px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 rounded">Medium</span>
+                                    <span class="px-2 py-1 text-xs border border-orange-500 text-orange-600 rounded">Review</span>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-300 mb-2">Machine learning project to analyze customer purchasing patterns...</p>
+                                <div class="flex items-center gap-4 text-xs text-gray-500">
+                                    <div class="flex items-center gap-1">
+                                        <i data-lucide="calendar" class="w-3 h-3"></i>
+                                        Nov 20
+                                    </div>
+                                    <div class="flex items-center gap-1">
+                                        <i data-lucide="users" class="w-3 h-3"></i>
+                                        2 members
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-4 text-right">
+                                <div class="text-sm font-medium mb-1">85%</div>
+                                <div class="w-20 bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="w-full py-2 border border-gray-300 dark:border-gray-600 rounded text-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            View All Projects
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Feed -->
+            <div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+                    <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+                        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Recent Activity</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Latest updates from your team</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <!-- Activity 1 -->
+                        <div class="flex gap-3">
+                            <div class="w-8 h-8 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center text-xs font-medium">
+                                JS
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-4 h-4"></i>
+                                    <span class="text-sm font-medium">John Smith</span>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    Completed task: User Authentication System
+                                </p>
+                                <p class="text-xs text-gray-500">2 hours ago</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 2 -->
+                        <div class="flex gap-3">
+                            <div class="w-8 h-8 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center text-xs font-medium">
+                                SJ
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="activity" class="w-4 h-4"></i>
+                                    <span class="text-sm font-medium">Sarah Johnson</span>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    Updated project description and added new requirements
+                                </p>
+                                <p class="text-xs text-gray-500">5 hours ago</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 3 -->
+                        <div class="flex gap-3">
+                            <div class="w-8 h-8 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center text-xs font-medium">
+                                MC
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="activity" class="w-4 h-4"></i>
+                                    <span class="text-sm font-medium">Mike Chen</span>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    Changed status from "Planning" to "In Progress"
+                                </p>
+                                <p class="text-xs text-gray-500">1 day ago</p>
+                            </div>
+                        </div>
+
+                        <!-- Activity 4 -->
+                        <div class="flex gap-3">
+                            <div class="w-8 h-8 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center text-xs font-medium">
+                                AD
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle" class="w-4 h-4"></i>
+                                    <span class="text-sm font-medium">Anna Davis</span>
+                                </div>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    Completed task: Feature Engineering
+                                </p>
+                                <p class="text-xs text-gray-500">1 day ago</p>
+                            </div>
+                        </div>
+
+                        <button class="w-full py-2 border border-gray-300 dark:border-gray-600 rounded text-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            View All Activity
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Urgent Projects -->
+        <div class="mt-8">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+                <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+                        <i data-lucide="alert-circle" class="w-5 h-5 text-orange-500"></i>
+                        Urgent Projects
+                    </h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Projects with approaching deadlines that need attention</p>
+                </div>
+                <div class="p-6 space-y-3">
+                    <div class="flex items-center justify-between p-3 border border-orange-200 dark:border-orange-800 rounded-lg bg-orange-50 dark:bg-orange-950/20">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="clock" class="w-4 h-4 text-orange-500"></i>
+                            <div>
+                                <h4 class="font-medium text-gray-900 dark:text-white">E-Learning Platform</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">3 days left</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-sm font-medium">65% complete</div>
+                            <div class="w-24 bg-gray-200 dark:bg-gray-700 rounded-full h-2 mt-1">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="mt-8">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+                <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Quick Actions</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Common tasks and shortcuts</p>
+                </div>
+                <div class="p-6">
+                    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                        <button class="p-4 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex flex-col items-center gap-2">
+                            <i data-lucide="plus" class="w-5 h-5"></i>
+                            <span>Create Project</span>
+                        </button>
+                        <button class="p-4 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex flex-col items-center gap-2">
+                            <i data-lucide="pie-chart" class="w-5 h-5"></i>
+                            <span>Browse Templates</span>
+                        </button>
+                        <button class="p-4 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex flex-col items-center gap-2">
+                            <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+                            <span>View Analytics</span>
+                        </button>
+                        <button class="p-4 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors flex flex-col items-center gap-2">
+                            <i data-lucide="users" class="w-5 h-5"></i>
+                            <span>Team Management</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

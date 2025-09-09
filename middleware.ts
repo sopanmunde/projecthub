@@ -1,7 +1,7 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-const isProtectedRoute = createRouteMatcher(["/dashboard(.*)", "/projects(.*)", "/appform(.*)", "/settings(.*)"]);
-const isPublicRoute = createRouteMatcher(["/test-templates"]);
+const isProtectedRoute = createRouteMatcher(["/dashboard(.*)", "/projects(.*)", "/appform(.*)", "/settings(.*)", "/enhanced-dashboard(.*)", "/search(.*)"]);
+const isPublicRoute = createRouteMatcher(["/test-templates", "/demo-dashboard.html", "/templates-demo.html"]);
 
 // This middleware will check if the user is authenticated before accessing protected routes
 
@@ -11,5 +11,5 @@ export default clerkMiddleware(async (auth, req) => {
 });
 
 export const config = {
-  matcher: ["/((?!.\\..|_next).*)", "/"],
+  matcher: ["/dashboard(.*)", "/projects(.*)", "/appform(.*)", "/settings(.*)", "/enhanced-dashboard(.*)", "/search(.*)"],
 };
