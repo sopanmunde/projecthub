@@ -11,6 +11,7 @@ import {
   Rabbit,
   Settings2,
   Sheet,
+  FolderOpen,
 } from "lucide-react"
 import { useUser } from "@clerk/nextjs"
 
@@ -61,6 +62,25 @@ const data = {
         {
           title: "Settings",
           url: "/settings",
+        },
+      ],
+    },
+    {
+      title: "Projects", 
+      url: "/projects/templates",
+      icon: FolderOpen,
+      items: [
+        {
+          title: "Templates",
+          url: "/projects/templates",
+        },
+        {
+          title: "Create New",
+          url: "/projects/new",
+        },
+        {
+          title: "My Projects",
+          url: "#",
         },
       ],
     },

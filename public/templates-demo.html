@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Templates - ProjectHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto p-6">
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Project Templates</h1>
+                    <p class="text-gray-600 dark:text-gray-300">Choose from our curated collection of project templates to get started quickly</p>
+                </div>
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                    Create Custom Project
+                </button>
+            </div>
+            
+            <!-- Search -->
+            <div class="relative max-w-sm">
+                <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
+                    <i data-lucide="search" class="w-4 h-4 text-gray-400"></i>
+                </div>
+                <input 
+                    type="text" 
+                    placeholder="Search templates..." 
+                    class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+                >
+            </div>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="mb-6">
+            <div class="flex space-x-1 bg-gray-100 dark:bg-gray-800 p-1 rounded-lg">
+                <button class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md transition-colors">All Categories</button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">Software Development</button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">Data Science</button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">Hardware</button>
+                <button class="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">Research</button>
+            </div>
+        </div>
+
+        <!-- Templates Grid -->
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Web App Template -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl">🌐</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Web Application</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Software Development</p>
+                        </div>
+                    </div>
+                    <span class="px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 rounded">Intermediate</span>
+                </div>
+                
+                <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">A full-stack web application with modern technologies</p>
+                
+                <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400 mb-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="clock" class="w-3 h-3"></i>
+                        8-12 weeks
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="users" class="w-3 h-3"></i>
+                        5 sections
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-1 mb-4">
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">React</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Node.js</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Database</span>
+                </div>
+                
+                <div class="flex gap-2">
+                    <button class="flex-1 px-3 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Use Template</button>
+                    <button class="px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile App Template -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl">📱</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mobile Application</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Software Development</p>
+                        </div>
+                    </div>
+                    <span class="px-2 py-1 text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 rounded">Advanced</span>
+                </div>
+                
+                <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Cross-platform mobile app for iOS and Android</p>
+                
+                <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400 mb-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="clock" class="w-3 h-3"></i>
+                        10-16 weeks
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="users" class="w-3 h-3"></i>
+                        5 sections
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-1 mb-4">
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">React Native</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Flutter</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Firebase</span>
+                </div>
+                
+                <div class="flex gap-2">
+                    <button class="flex-1 px-3 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Use Template</button>
+                    <button class="px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Data Science Template -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl">📊</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Data Science Project</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Data Science</p>
+                        </div>
+                    </div>
+                    <span class="px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 rounded">Intermediate</span>
+                </div>
+                
+                <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Data analysis and machine learning project</p>
+                
+                <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400 mb-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="clock" class="w-3 h-3"></i>
+                        6-10 weeks
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="users" class="w-3 h-3"></i>
+                        5 sections
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-1 mb-4">
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Python</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Machine Learning</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">+2 more</span>
+                </div>
+                
+                <div class="flex gap-2">
+                    <button class="flex-1 px-3 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Use Template</button>
+                    <button class="px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- IoT Template -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl">🔌</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">IoT System</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Hardware</p>
+                        </div>
+                    </div>
+                    <span class="px-2 py-1 text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300 rounded">Advanced</span>
+                </div>
+                
+                <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Internet of Things project with hardware and software components</p>
+                
+                <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400 mb-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="clock" class="w-3 h-3"></i>
+                        12-16 weeks
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="users" class="w-3 h-3"></i>
+                        5 sections
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-1 mb-4">
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Arduino</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Sensors</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">+2 more</span>
+                </div>
+                
+                <div class="flex gap-2">
+                    <button class="flex-1 px-3 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Use Template</button>
+                    <button class="px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Research Paper Template -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl">📚</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Research Paper</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Research</p>
+                        </div>
+                    </div>
+                    <span class="px-2 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300 rounded">Intermediate</span>
+                </div>
+                
+                <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Academic research project with literature review and analysis</p>
+                
+                <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400 mb-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="clock" class="w-3 h-3"></i>
+                        8-12 weeks
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="users" class="w-3 h-3"></i>
+                        5 sections
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-1 mb-4">
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Literature Review</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Analysis</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">+2 more</span>
+                </div>
+                
+                <div class="flex gap-2">
+                    <button class="flex-1 px-3 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Use Template</button>
+                    <button class="px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Business Plan Template -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-lg transition-shadow p-6 border border-gray-200 dark:border-gray-700">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl">💼</div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Business Plan</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Business</p>
+                        </div>
+                    </div>
+                    <span class="px-2 py-1 text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300 rounded">Beginner</span>
+                </div>
+                
+                <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Comprehensive business plan for a startup or new venture</p>
+                
+                <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400 mb-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="clock" class="w-3 h-3"></i>
+                        6-8 weeks
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="users" class="w-3 h-3"></i>
+                        5 sections
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-1 mb-4">
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Market Analysis</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">Financial Planning</span>
+                    <span class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded">+2 more</span>
+                </div>
+                
+                <div class="flex gap-2">
+                    <button class="flex-1 px-3 py-2 text-sm bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors">Use Template</button>
+                    <button class="px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 rounded hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <i data-lucide="star" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
