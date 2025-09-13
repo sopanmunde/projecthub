@@ -16,6 +16,7 @@ import { CalendarDays, BookOpen } from "lucide-react";
 export function WorksheetVerification() {
   const [selectedAcademicYear, setSelectedAcademicYear] = useState("2024-2025");
   const [selectedYearOfStudy, setSelectedYearOfStudy] = useState("");
+  const [selectedYearOfPhases, setSelectedYearOfPhases] = useState("");
 
   const academicYears = [
     "2022-2023",
@@ -30,6 +31,11 @@ export function WorksheetVerification() {
     "Second Year",
     "Third Year",
     "Final Year",
+  ];
+
+  const yearsOfPhases = [
+    "Phase I",
+    "Phase II",
   ];
 
   return (
@@ -76,6 +82,26 @@ export function WorksheetVerification() {
             </SelectContent>
           </Select>
         </div>
+
+        <div className="space-y-2">
+          <Label htmlFor="year-of-Phase-select" className="font-medium flex items-center">
+            <BookOpen className="mr-2 h-4 w-4 text-muted-foreground" />
+            Year of Phase:
+          </Label>
+          <Select value={selectedYearOfPhases} onValueChange={setSelectedYearOfPhases}>
+            <SelectTrigger id="year-of-Phase-select" className="w-full md:w-[280px]">
+              <SelectValue placeholder="Select Phase" />
+            </SelectTrigger>
+            <SelectContent>
+              {yearsOfPhases.map((year) => (
+                <SelectItem key={year} value={year}>
+                  {year}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+
       </CardContent>
     </Card>
   );

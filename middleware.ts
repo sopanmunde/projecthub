@@ -2,6 +2,14 @@ import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 const isProtectedRoute = createRouteMatcher(["/dashboard(.*)"]);
 
+const roleRedirects: Record<string, string> = {
+  Head: "/dashboard/head",
+  Manager: "/dashboard/manager",
+  Mentor: "/dashboard/mentor",
+  Student: "/dashboard/student",
+};
+
+
 // This middleware will check if the user is authenticated before accessing protected routes
 
 export default clerkMiddleware(async (auth, req) => {
@@ -10,4 +18,4 @@ export default clerkMiddleware(async (auth, req) => {
 
 export const config = {
   matcher: ["/((?!.\\..|_next).*)", "/"],
-};
+ };

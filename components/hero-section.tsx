@@ -27,7 +27,6 @@ export default function HeroSection() {
                             </Button>
                         </div>
                     </div>
-
                     <div className="mx-auto -mt-16 max-w-7xl">
                         <div className="perspective-distant -mr-16 pl-16 lg:-mr-56 lg:pl-56">
                             <div className="[transform:rotateX(20deg);]">
@@ -57,6 +56,7 @@ export default function HeroSection() {
                                         aria-hidden
                                         className="z-2 absolute inset-0 size-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,transparent_40%,var(--color-background)_100%)]"
                                     />
+                                    
 
                                     <Image
                                         className="rounded-(--radius) z-1 relative border dark:hidden"
