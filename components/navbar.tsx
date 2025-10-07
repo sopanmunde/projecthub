@@ -55,29 +55,28 @@ export default function Nav () {
                                         ))}
                                    </ul>
                                 </div>
-                               <div>
-  <DropdownMenu>
-    <DropdownMenuTrigger>Register</DropdownMenuTrigger>
-    <DropdownMenuContent>
-      <DropdownMenuSeparator />
-      <Link href="/sign-up">
-        <DropdownMenuItem>Head</DropdownMenuItem>
-      </Link>
-      <Link href="/sign-up">
-        <DropdownMenuItem>Manager</DropdownMenuItem>
-      </Link>
-      <Link href="/sign-up">
-        <DropdownMenuItem>Mentor</DropdownMenuItem>
-      </Link>
-      <Link href="/sign-up">
-        <DropdownMenuItem>Students</DropdownMenuItem>
-      </Link>
-    </DropdownMenuContent>
-  </DropdownMenu>
-</div>
-
-
-                                
+                               <div className='lg:pr-4 w-full'>
+                                 <DropdownMenu>
+                                  <DropdownMenuTrigger>Register</DropdownMenuTrigger>
+                                   <DropdownMenuContent>
+                                     <Link href="/sign-up">
+                                      <DropdownMenuItem>Head</DropdownMenuItem>
+                                     </Link>
+                                     <DropdownMenuSeparator />
+                                     <Link href="/sign-up">
+                                      <DropdownMenuItem>Manager</DropdownMenuItem>
+                                     </Link>
+                                     <DropdownMenuSeparator />
+                                     <Link href="/sign-up">
+                                      <DropdownMenuItem>Mentor</DropdownMenuItem>
+                                     </Link>
+                                     <DropdownMenuSeparator />
+                                     <Link href="/sign-up">
+                                      <DropdownMenuItem>Students</DropdownMenuItem>
+                                     </Link>
+                                   </DropdownMenuContent>
+                                 </DropdownMenu>
+                               </div>
                                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
                                    <UserButton/>
                                    <ModeToggle/>
