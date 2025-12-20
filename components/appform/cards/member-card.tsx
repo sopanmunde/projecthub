@@ -2,9 +2,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/appform/ui/card";
-import { Button } from "@/components/appform/ui/button";
-import { Avatar, AvatarFallback } from "@/components/appform/ui/avatar";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Mail, Phone, Trash2, UserCircle, Edit, Save, X } from "lucide-react"; 
 import type { Member } from "@/types";
 import { AddMemberForm, type MemberFormValues } from "@/components/appform/forms/add-member-form";

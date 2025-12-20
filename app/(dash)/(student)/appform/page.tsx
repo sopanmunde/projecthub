@@ -5,10 +5,10 @@ import { AppShell } from "@/components/appform/layout/app-shell";
 import { SiteHeader } from "@/components/site-header";
 import React, { useState, useEffect } from 'react';
 
-import { WorksheetVerification } from "@/components/appform/dashboard/worksheet-verification";
-import { GroupManagement } from "@/components/appform/dashboard/group-management";
-import { ProjectManagement } from "@/components/appform/dashboard/project-management";
-import { SubmissionSection } from "@/components/appform/dashboard/submission-section";
+import { WorksheetVerification } from "@/components/appform/cards/worksheet-verification";
+import { GroupManagement } from "@/components/appform/cards/group-management";
+import { ProjectManagement } from "@/components/appform/cards/project-management";
+import { SubmissionSection } from "@/components/appform/cards/submission-section";
 import { Separator } from '@/components/ui/separator';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import type { Member, Project } from '@/types';

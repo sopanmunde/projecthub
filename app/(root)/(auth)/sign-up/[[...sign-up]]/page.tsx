@@ -22,7 +22,7 @@ import {
   IconBrandOnlyfans,
 } from "@tabler/icons-react";
 import { BookOpen } from "lucide-react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/appform/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function Page() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

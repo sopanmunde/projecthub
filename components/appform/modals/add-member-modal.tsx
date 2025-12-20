@@ -6,7 +6,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@/components/appform/ui/dialog";
+} from "@/components/ui/dialog";
 import { AddMemberForm } from "@/components/appform/forms/add-member-form";
 import type { MemberFormValues } from "@/components/appform/forms/add-member-form";
 

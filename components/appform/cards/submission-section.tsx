@@ -2,10 +2,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "@/components/appform/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/appform/ui/card";
-import { Checkbox } from "@/components/appform/ui/checkbox";
-import { Label } from "@/components/appform/ui/label";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import { Send, CheckCircle, AlertCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 

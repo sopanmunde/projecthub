@@ -2,8 +2,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Button } from "@/components/appform/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/appform/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AddProjectForm, type ProjectFormValues } from "@/components/appform/forms/add-project-form";
 import { ProjectCard } from "./project-card";
 import type { Project } from "@/types";
@@ -16,8 +16,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/appform/ui/select";
-import { Label } from "@/components/appform/ui/label";
+} from "@/components/ui/select";
+import { Label } from "@/components/ui/label";
 
 interface ProjectManagementProps {
   onProjectsChange?: (projects: Project[]) => void;

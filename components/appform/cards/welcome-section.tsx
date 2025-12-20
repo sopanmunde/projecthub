@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/appform/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function WelcomeSection() {
   const studentName = "MUNDE SOPAN BALKRUSHNA"; // Hardcoded for now

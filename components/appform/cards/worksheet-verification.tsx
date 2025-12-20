@@ -2,15 +2,15 @@
 "use client";
 
 import React, { useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/appform/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/appform/ui/select";
-import { Label } from "@/components/appform/ui/label";
+} from "@/components/ui/select";
+import { Label } from "@/components/ui/label";
 import { CalendarDays, BookOpen } from "lucide-react";
 
 export function WorksheetVerification() {

@@ -13,9 +13,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/appform/ui/form";
-import { Input } from "@/components/appform/ui/input";
-import { Textarea } from "@/components/appform/ui/textarea";
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { plagiarismCheckAndAbstractImprover } from "@/ai/flows/plagiarism-check-and-abstract-improver";
 import type { PlagiarismCheckAndAbstractImproverOutput } from "@/ai/flows/plagiarism-check-and-abstract-improver";
 import { PlagiarismResultDisplay } from "@/components/appform/ai/plagiarism-result-display";

@@ -2,8 +2,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Button } from "@/components/appform/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/appform/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { AddMemberForm, type MemberFormValues } from "@/components/appform/forms/add-member-form";
 import type { Member } from "@/types";
 import { PlusCircle, Users, XCircle } from "lucide-react";
@@ -14,9 +14,9 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/appform/ui/select";
-import { Label } from "@/components/appform/ui/label";
-import { Input } from "@/components/appform/ui/input";
+} from "@/components/ui/select";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 import { MemberCard } from "./member-card";
 
 interface GroupManagementProps {

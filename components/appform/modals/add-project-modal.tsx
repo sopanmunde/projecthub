@@ -6,7 +6,7 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@/components/appform/ui/dialog";
+} from "@/components/ui/dialog";
 import { AddProjectForm, ProjectFormValues } from "@/components/appform/forms/add-project-form";
 import type { Project } from "@/types";
 import type { PlagiarismCheckAndAbstractImproverOutput } from "@/ai/flows/plagiarism-check-and-abstract-improver";

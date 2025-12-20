@@ -1,13 +1,13 @@
 
 "use client";
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/appform/ui/card";
-import { Button } from "@/components/appform/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/appform/ui/accordion";
-import { ScrollArea } from "@/components/appform/ui/scroll-area";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { FileText, Lightbulb, Trash2, CheckCircle, AlertTriangle, Edit, Paperclip, ExternalLink } from "lucide-react";
 import type { Project } from "@/types";
-import { Badge } from "@/components/appform/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import { AddProjectForm, type ProjectFormValues } from "@/components/appform/forms/add-project-form";
 import type { PlagiarismCheckAndAbstractImproverOutput } from "@/ai/flows/plagiarism-check-and-abstract-improver";
 import { useToast } from "@/hooks/use-toast";
