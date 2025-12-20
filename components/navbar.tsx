@@ -78,7 +78,6 @@ export default function Nav () {
                                  </DropdownMenu>
                                </div>
                                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit lg:border-l lg:pl-6">
-                                   <UserButton/>
                                    <ModeToggle/>
                                 </div>
                             </div>
